@@ -1,0 +1,107 @@
+1. Initialisation et configuration
+• git init : Initialise un dépôt Git dans un répertoire.
+• git clone <url> : Clone un dépôt existant à partir d’une URL.
+• git config --global user.name "Nom" : Définit le nom de l’utilisateur globalement.
+• git config --global user.email "email@example.com" : Définit l’e-mail de
+l’utilisateur globalement.
+
+2. Gestion des fichiers
+• git add <fichier> : Ajoute un fichier à l’index (staging area).
+• git add . : Ajoute tous les fichiers modifiés au staging area.
+• git rm <fichier> : Supprime un fichier du dépôt et du système de fichiers.
+• git mv <ancien_nom> <nouveau_nom> : Renomme un fichier suivi par Git.
+
+3. Validation des modifications
+• git commit -m "Message" : Valide les modifications avec un message.
+• git commit -am "Message" : Ajoute et valide les modifications directement (uniquement
+pour les fichiers suivis).
+
+4. Visualisation de l'état
+• git status : Affiche l’état des fichiers suivis, modifiés ou en attente.
+• git log : Montre l’historique des commits.
+• git diff : Affiche les différences entre les fichiers.
+• git show <commit> : Affiche les détails d’un commit spécifique.
+
+5. Branches
+• git branch : Liste les branches locales.
+• git branch <nom> : Crée une nouvelle branche.
+• git checkout <branche> : Change de branche.
+• git checkout -b <branche> : Crée et bascule sur une nouvelle branche.
+• git merge <branche> : Fusionne une branche dans la branche actuelle.
+• git branch -d <branche> : Supprime une branche localement.
+
+6. Gestion à distance
+• git remote -v : Liste les dépôts distants.
+• git remote add <nom> <url> : Ajoute un dépôt distant.
+• git pull <remote> <branche> : Récupère et fusionne les modifications du dépôt
+distant.
+• git push <remote> <branche> : Envoie les modifications locales vers le dépôt distant.
+
+7. Réinitialisation et annulation
+• git reset <fichier> : Supprime un fichier du staging area.
+• git reset --hard <commit> : Réinitialise tout (fichiers et historique) à un commit
+spécifique.
+• git revert <commit> : Crée un nouveau commit qui annule un commit précédent.
+
+8. Tags
+• git tag <nom> : Crée un tag léger.
+• git tag -a <nom> -m "Message" : Crée un tag annoté avec un message.
+• git push <remote> --tags : Pousse les tags vers un dépôt distant.
+
+9. Nettoyage
+• git clean -f : Supprime les fichiers non suivis.
+• git clean -fd : Supprime les fichiers et répertoires non suivis.
+
+10. Outils avancés
+• git stash : Sauvegarde temporairement les modifications en cours.
+• git stash apply : Restaure les modifications sauvegardées avec stash.
+• git cherry-pick <commit> : Applique un commit spécifique sur la branche actuelle.
+
+---------------------------------------------------------------------------------------------------------
+
+Maven
+
+''Initialiser un projet Maven
+mvn archetype:generate
+
+''Compiler le projet
+mvn compile
+
+''Exécuter les tests
+mvn test
+
+''Générer le package (JAR/WAR)
+mvn package
+
+''Nettoyer le projet (supprimer les fichiers générés)
+mvn clean
+
+''Build complet : nettoyer, compiler, installer
+mvn clean install
+
+''Installer un artefact dans le référentiel local
+mvn install
+
+''Déployer un artefact dans un référentiel distant
+mvn deploy
+
+''Mettre à jour les dépendances
+mvn dependency:resolve
+
+''Afficher les dépendances sous forme d’arborescence
+mvn dependency:tree
+
+''Vérifier le projet
+mvn validate
+
+''Générer des rapports (qualité du code, documentation)
+mvn site
+
+''Exécuter une application Java avec Maven
+mvn exec:java -Dexec.mainClass="com.example.Main"
+
+''Mettre à jour la configuration pour Eclipse
+mvn eclipse:eclipse
+
+''Activer un profil Maven spécifique
+mvn clean install -PnomDuProfil
