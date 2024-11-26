@@ -1,0 +1,65 @@
+1. Installer Git et afficher l'aide :
+• git help
+
+2. Configurer votre identité :
+• git config --global user.name "Votre Nom"
+• git config --global user.email "votre@email.com"
+
+3. Vérifier votre identité :
+• git config --global user.name
+• git config --global user.email
+
+4. Créer un dossier dep1 :
+• mkdir dep1
+
+5. Initialiser un dépôt Git :
+• cd dep1
+• git init
+
+6. Créer et éditer le fichier README.txt :
+• echo "Votre nom et prénom (exemple : zaid el fid)" > README.txt
+• echo "MIT License" >> README.txt
+• echo "Copyright (c) 2022 e-polytechnique" >> README.txt
+
+7. Visualiser l'état de votre suivi Git :
+• git status
+
+8. Ajouter le fichier README.txt à la staging area :
+• git add README.txt
+
+9. Vérifier que le fichier README.txt est en staging :
+• git status
+
+10. Valider les modifications avec un message :
+• git commit -m "Ajouter README"
+
+11. Ajouter votre email au fichier README.txt :
+• echo "Votre email (exemple : elfid.zaid@gmail.com)" >> README.txt
+
+12. Valider cette nouvelle modification avec un message :
+• git commit -am "Ajouter email à README"
+
+13. Afficher les modifications dans README.txt :
+• git show
+
+14. Afficher l'historique des commits :
+• git log
+
+15. Créer une nouvelle branche :
+• git branch mybranche
+
+16. Vérifier la création de la nouvelle branche :
+• git branch
+
+17. Changer de branche vers mybranche :
+• git checkout mybranche
+
+18. Ajouter le code postal au fichier README.txt :
+• echo "Code postal (exemple : 70000)" >> README.txt
+
+19. Valider cette nouvelle modification avec un message :
+• git commit -am "Ajouter cp à README"
+
+20. Fusionner la branche mybranche avec la branche master :
+• git checkout master
+• git merge mybranche
